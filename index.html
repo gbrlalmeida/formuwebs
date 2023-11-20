@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <title>Formulário de Games</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário de Games</h1>
+        <form id="gameForm">
+
+            <div class="form-group">
+                <label for="nome">Nome:</label>
+                <input type="text" class="form-control" id="nome" name="nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="idade">Idade:</label>
+                <input type="number" class="form-control" id="idade" name="idade" required>
+            </div>
+
+            <div class="form-group">
+                <label>Gênero:</label>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoM" name="genero" value="Masculino">
+                    <label class="form-check-label" for="generoM">Masculino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoF" name="genero" value="Feminino">
+                    <label class="form-check-label" for="generoF">Feminino</label>
+                </div>
+                <div class="form-check">
+                    <input type="radio" class="form-check-input" id="generoO" name="genero" value="Outro">
+                    <label class="form-check-label" for="generoO">Outro</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label>Gêneros de Jogos:</label>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="acao" name="generos[]" value="Ação">
+                    <label class="form-check-label" for="acao">Ação</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="aventura" name="generos[]" value="Aventura">
+                    <label class="form-check-label" for="aventura">Aventura</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="estrategia" name="generos[]" value="Estratégia">
+                    <label class="form-check-label" for="estrategia">Estratégia</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="rpg" name="generos[]" value="RPG">
+                    <label class="form-check-label" for="rpg">RPG</label>
+                </div>
+                <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="esporte" name="generos[]" value="Esporte">
+                    <label class="form-check-label" for="esporte">Esporte</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="jogarComAmigo">Você gosta de jogar com um amigo?</label>
+                <select class="form-control" id="jogarComAmigo" name="jogarComAmigo" required>
+                    <option value="sim">Sim</option>
+                    <option value="nao">Não</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="horario">Qual horário você mais gosta de jogar?</label>
+                <input type="text" class="form-control" id="horario" name="horario" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
+
+
